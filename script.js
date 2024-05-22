@@ -18,7 +18,7 @@ const pipe = document.querySelector('.pipe');
         
         console.log(marioPosition);
         
-        if (pipePosition <= 120 && pipePosition> 0 && marioPosition < 80) {
+        if (pipePosition <= 120 && pipePosition> 0 && marioPosition < 70) {
 
             pipe.style.animation = 'none';
             pipe.style.left = `${pipePosition}px`;
@@ -26,9 +26,9 @@ const pipe = document.querySelector('.pipe');
             mario.style.animation = 'none';
             mario.style.bottom = `${marioPosition}px`;
 
-            mario.src = './images/game-over.png';
-            mario.style.width = '80px'
-            mario.style.marginLeft = '50px'
+            mario.src = './images/NatHoo.png';
+            mario.style.width = '70px'
+            mario.style.marginLeft = '60px'
 
             clearInterval(loop);
         }
