@@ -1,5 +1,8 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+
+audioStart = new Audio('./soung/audio_theme.mp3')
+audioStart.play()
     
     const jump = () => {
         mario.classList.add('jump');
@@ -36,3 +39,5 @@ const pipe = document.querySelector('.pipe');
     }, 10);
 
 document.addEventListener('keydown', jump);
+
+document.getElementById('botao-pular').addEventListener('click', jump);
